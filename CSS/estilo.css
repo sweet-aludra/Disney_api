@@ -30,7 +30,7 @@ img {
 
 body{
     place-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
     background: radial-gradient(circle, var(--cor5), var(--corfundo), var(--corfundo));
     min-height: 87vh;
