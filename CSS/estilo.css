@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'alex';
+    src: url(../font/Caveat/Caveat-VariableFont_wght.ttf);
+}
+:root { /*tabela de cores baseada na Disney*/
+    --cor1: #d13a1d;
+    --cor2: #f4dca0;
+    --cor3: #82cbae;
+    --cor4: #309587;
+    --cor5: #bba2db;
+    --cor6: #5454af;
+    --corfundo : #f7f8df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'alex';
+}
+
+img {
+    width: 200px; 
+    height: 200px;
+    background-color: var(--cor2);
+    border: 5px outset var(--cor1);
+    border-radius: 30% 70% / 50% 50%;
+    display: none; /* conecçao com JS */
+}
+
+body{
+    place-items: center;
+    margin-top: 100px;
+    text-align: center;
+    background: radial-gradient(circle, var(--cor5), var(--corfundo), var(--corfundo));
+    min-height: 87vh;
+}
+main { /* deixa */
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+h1 {
+    font-size: 45px;
+    color: var(--cor4);
+}
+p {
+    font-size: 25px;
+    color: var(--cor4);
+}
+
+.titulo {
+    color: var(--cor5);
+}
+
+/*estilo da busca*/
+input {
+    width: 250px;
+    height: 40px;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px 50%;
+}
+input::placeholder{
+    font-size: 15px;
+    color: var(--cor1);
+}
+input:focus{
+    outline: none;
+    border: 3px solid var(--cor1);
+}
+
+/*stilo do botao de busca*/
+button.coracao_butao {
+    width: 200px;
+    height: 35px;
+    font-size: 25px;
+    color: var(--cor4);
+    border: 2px solid var(--cor1);
+    background-color: var(--corfundo);
+    border-radius: 15px 30px;
+    cursor: pointer;
+}
+.coracao_butao:hover { /*quando o mouse for em cima*/
+    transform: skew(20deg, 5deg);
+}
+button:focus{ /*quando for clicado*/
+    outline: none;
+    border: 2px inset var(--cor3);
+}
+
+/* stilo dos botoes de proximo e anterior*/
+#btn-prev, #btn-next {
+    width: 115px;
+    height: 35px;
+    font-size: 25px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    border: none;
+    border-radius: 5px;
+}
+#btn-prev:hover { /*quando o mouse for em cima*/
+    transform: scale(0.75);
+}
+#btn-next:hover {
+    transform: scale(0.75);
+}
