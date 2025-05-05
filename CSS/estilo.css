@@ -141,6 +141,5 @@ button:focus{ /*quando for clicado*/
 @media(max-width: 600px){
     section {
         box-shadow: -5px -15px 0px var(--cor6);
-        margin-top: 900px;
     }
 }
