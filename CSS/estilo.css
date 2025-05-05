@@ -3,12 +3,11 @@
     src: url(../font/Caveat/Caveat-VariableFont_wght.ttf);
 }
 :root { /*tabela de cores baseada na Disney*/
-    --cor1: #d13a1d;
+    --cor1: #5454af;
     --cor2: #f4dca0;
     --cor3: #82cbae;
     --cor4: #309587;
     --cor5: #bba2db;
-    --cor6: #5454af;
     --corfundo : #f7f8df;
 }
 
@@ -46,11 +45,11 @@ main { /* deixa */
     position: relative;
 }
 section {
-    background-color: var(--corfundo);
+    background-color: #fbdfe4;
     border-radius: 10px;
     padding: 15px;
     width: 330px;
-    box-shadow: -25px -15px 0px var(--cor6);
+    box-shadow: -25px -15px 0px var(--cor1);
 }
 form{
     display: flex;
@@ -138,8 +137,8 @@ button:focus{ /*quando for clicado*/
     transform: scale(0.75);
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px){ /* responsividade celular */
     section {
-        box-shadow: -5px -15px 0px var(--cor6);
+        box-shadow: -15px -15px 0px var(--cor6);
     }
 }
