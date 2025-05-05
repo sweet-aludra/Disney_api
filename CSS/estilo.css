@@ -24,15 +24,19 @@ img {
     height: 200px;
     background-color: var(--cor2);
     border: 5px outset var(--cor1);
-    border-radius: 30% 70% / 50% 50%;
+    border-radius: 50%;
     display: none; /* conecçao com JS */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body{
-    place-items: center;
-    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    background: radial-gradient(circle, var(--cor5), var(--corfundo), var(--corfundo));
+    background: var(--cor5);
     min-height: 87vh;
 }
 main { /* deixa */
@@ -41,7 +45,13 @@ main { /* deixa */
     padding: 15px;
     position: relative;
 }
-
+section {
+    background-color: var(--corfundo);
+    border-radius: 10px;
+    padding: 15px;
+    width: 330px;
+    box-shadow: -25px -15px 0px var(--cor6);
+}
 form{
     display: flex;
     align-items: center;
@@ -50,18 +60,28 @@ form{
 }
 h1 {
     font-size: 45px;
-    color: var(--cor4);
+    color: var(--cor5);
 }
 p {
     font-size: 25px;
+    color: var(--cor3);
+}
+
+#rodape {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+#rodape p, a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor1)
+}
+a:hover {
     color: var(--cor4);
 }
 
-.titulo {
-    color: var(--cor5);
-}
-
-/*estilo da busca*/
+/*estilo da busca id*/
 input {
     width: 250px;
     height: 40px;
@@ -70,11 +90,12 @@ input {
     text-align: center;
     font-size: 25px;
     border: none;
-    border-radius: 15px 50%;
+    border-radius: 15px;
 }
 input::placeholder{
     font-size: 15px;
     color: var(--cor1);
+    text-align: center;
 }
 input:focus{
     outline: none;
@@ -86,18 +107,18 @@ button.coracao_butao {
     width: 200px;
     height: 35px;
     font-size: 25px;
-    color: var(--cor4);
+    color: var(--cor1);
     border: 2px solid var(--cor1);
     background-color: var(--corfundo);
-    border-radius: 15px 30px;
+    border-radius: 15px;
     cursor: pointer;
 }
-.coracao_butao:hover { /*quando o mouse for em cima*/
-    transform: skew(20deg, 5deg);
-}
+
 button:focus{ /*quando for clicado*/
     outline: none;
     border: 2px inset var(--cor3);
+    background: var(--cor3);
+    color: var(--cor6);
 }
 
 /* stilo dos botoes de proximo e anterior*/

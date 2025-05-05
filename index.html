@@ -10,19 +10,25 @@
     <title>Disney&copy;</title>
 </head>
 <body>
-    <h1 class="titulo">Personagens da Disney! &#x1F9D0</h1><br>
-    <h1 id="nome-personagem">Carregando...</h1> <!--ID vai para JS-->
-    <p id="id-personagem"></p> <!--ID vai para JS-->
-    <img id="imagem-personagem" src="#" alt="personagem"/> <!--ID vai para JS-->
-
-    <br>
-
-    <form id="form"> <!--ID vai para JS-->
-        <input type="text" id="input-id" placeholder="Digite um ID" required/> <!--ID vai para JS-->
-        <button type="submit" class="coracao_butao">Buscar</button>
-    </form><br>
-
-    <button id="btn-prev">&lt; Anterior</button> <!--ID vai para JS-->
-    <button id="btn-next">Próximo &gt;</button> <!--ID vai para JS-->
+    <header></header>
+    <section style="background-image: url('IMGS/fundo_img.png'); background-size: 180%; background-position: center; background-repeat: no-repeat;">
+        <div>
+            <h1 id="nome-personagem">Carregando...</h1> <!--ID vai para JS-->
+            <p id="id-personagem"></p> <!--ID vai para JS-->
+            <img id="imagem-personagem" src="#" alt="personagem"/> <!--ID vai para JS-->
+        </div><br>
+        <div>
+            <form id="form"> <!--ID vai para JS-->
+                <input type="text" id="input-id" placeholder="Digite um ID" required/> <!--ID vai para JS-->
+                <button type="submit" class="coracao_butao">Buscar</button>
+            </form><br>
+            <button id="btn-prev">&lt; Anterior</button> <!--ID vai para JS-->
+            <button id="btn-next">Próximo &gt;</button> <!--ID vai para JS-->
+        </div>
+    </section><br>
+    <footer id="rodape">
+        <p>&reg;Adryelle & Shania</p>
+        <p>&gt;<a href="https://disneyapi.dev/?ref=public_apis&utm_medium=website">Disney_Api</a>&lt;</p>
+    </footer>
 </body>
 </html>
