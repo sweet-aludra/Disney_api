@@ -139,7 +139,7 @@ button:focus{ /*quando for clicado*/
 
 @media(max-width: 600px){ /* responsividade celular */
     section {
-        width: 100px;
-        box-shadow: -55px -15px 0px var(--cor1);
+        width: 330px;
+        box-shadow: -5px -15px 0px var(--cor1);
     }
 }
