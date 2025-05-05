@@ -140,6 +140,6 @@ button:focus{ /*quando for clicado*/
 @media(max-width: 600px){ /* responsividade celular */
     section {
         width: 300px;
-        box-shadow: -20px -15px 0px var(--cor6);
+        box-shadow: -20px -15px 0px var(--cor1);
     }
 }
